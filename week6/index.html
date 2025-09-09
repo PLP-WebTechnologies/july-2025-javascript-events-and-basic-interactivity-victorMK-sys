@@ -1,1 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mastering JavaScript</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Interactive Web Pages with JavaScript</h1>
+  </header>
+  <main>
+    <section id="part1">
+      <h2>Event Handling and Interactive Elements:</h2>
+      <label for="name">Enter your name: </label>
+      <input type="text" id="name" required>
+      <button type="submit" id="ctn-btn">Continue</button>
+      <div class="hello-msg"></div>
+    </section>
+    <section id="part2">
+      <h2>Building Interactive Elements</h2>
+      <div class="counter">
+        <h3>Simple Counter Game</h3>
+        <p class="display-count">0</p>
+        <button type="button" id="start-btn" style="background-color: green;">Start</button>
+        <button type="button" id="stop-btn" style="background-color: red;">Stop</button>
+        <button type="button" id="reset-btn" style="background-color: black;">Reset</button>
+      </div>
+      <div class="faqs">
+        <div class="faqs-heading">
+          <h3>FAQs</h3>
+          <button type="button" id="display-faqs">></button>
+        </div>
+        <ol class="faqs-body">
+          <li><a href="#">What is JavaScript?</a></li>
+          <li><a href="#">Other use cases of JavaScript apart from web development</a></li>
+          <li><a href="#">Programming languages similar to JavaScript</a></li>
+        </ol>
+      </div>
+    </section>
+    <section id="part3">
+      <div class="input-error">
+        <p>Please fill the name, email and password fields</p>
+        <button type="button" id="show-form-btn">Okay</button>
+      </div>
+      <div class="form-wrapper">
+        <form>
+          <h3>SignUp</h3>
+          <div class="form-container">
+            <label for="user">Username:</label>
+            <input type="text" name="user" id="user" class="input-params">
+          </div>
+          <div class="form-container">
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" class="input-params">
+          </div>
+          <div class="form-container">
+            <label for="pass">Password:</label>
+            <input type="password" name="pass" id="pass" class="input-params">
+          </div>
+          <button type="button" id="submit">Submit</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <script src="./script.js"></script>
+</body>
+
+</html>
